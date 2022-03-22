@@ -1,0 +1,30 @@
+/*
+ @Author: Edgetech Consults
+ @URL: https://edgetech.co.ke
+ This file contains the global styling for the Jamborow platform
+
+ MENU ==>
+ 01.	Font styles
+ 02.	Links
+*/
+
+/* =============================================
+			Font Styles
+============================================= */
+@import url('../../fonts/circular/circular-std-master/css/circular-std.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+body{
+	font-family: CircularStd;
+	font-size: 13px;
+	width: 100%;
+}
+.invalid-feedback{
+	font-size: 13px !important;
+}
+.dropdown-messages.dropdown-tasks.dropdown-menu.dropdown-menu-right{
+	max-height: 250px !important;
+	overflow-y: scroll;
+}
+/* =============================================
+			Link Styles
+============================================= */

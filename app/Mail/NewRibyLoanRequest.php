@@ -1,0 +1,37 @@
+<?php
+
+namespace App\Mail;
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Mail\Mailable;
+use Illuminate\Queue\SerializesModels;
+
+class NewRibyLoanRequest extends Mailable
+{
+    use Queueable, SerializesModels;
+
+    public $maildata;
+
+    /**
+     * Create a new message instance.
+     *
+     * @return void
+     */
+    public function __construct($maildata)
+    {
+        $this->maildata = $maildata;
+    }
+
+    /**
+     * Build the message.
+     *
+     * @return $this
+     */
+    public function build()
+    {
+        return $this->markdown('emails.loan.notify-riby-lender')
+                    ->with(['data' => $this->maildata])
+                    ->subject('You Have a New Loan Request');
+    }
+}

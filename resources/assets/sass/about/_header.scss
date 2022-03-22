@@ -1,0 +1,56 @@
+.about--header {
+    min-height: 100vh;
+    & * {
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .header-play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 90px;
+        transform: translate(-60%, -30%);
+        @media (min-width: 960px) {
+            transform: translate(-70%, -30%);
+        }
+    }
+
+    .heading1 {
+        font-weight: 900;
+    }
+
+    .mt-header-writeup {
+        order: 2;
+    }
+
+    .heading4 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        & + *{
+            margin-top: 10px;
+        }
+    }
+
+    .mt-header-pattern-design {
+        &:hover {
+            .header-play-btn {
+                .yellow-black {
+                    fill: #44AB96;
+                }
+
+                .yellow-green {
+                    fill: #2D3652;
+                }
+            }
+        }
+    }
+
+    .mt-header-pattern-design {
+        order: 1;
+        @media (max-width: 959px) {
+            order: 3;
+        }
+        @media (min-width: 960px) {
+            padding: 100px 50px 50px 0;
+        }
+    }
+}

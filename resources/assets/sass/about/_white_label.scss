@@ -1,0 +1,52 @@
+.white--label--section {
+    padding: 100px 0;
+    background-image: url(/img/white_label_bg.png);
+
+    h3 {
+        font-weight: 900;
+        margin: 0;
+
+    }
+
+
+    .mt-item-list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+
+        & > div {
+            position: relative;
+            display: flex;
+            width: calc((100% / 3) - 20px);
+            flex-direction: column;
+            align-items: flex-start;
+            background-image: url(/img/item_bg.png) , linear-gradient( rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+            box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+            //backdrop-filter: blur(40px);
+            background-size: cover;
+            border-radius: 30px;
+            padding: 20px;
+            transition: all .3s ease-in-out;
+            margin-bottom: 30px;
+
+            p {
+                margin: 0;
+                color: #0a0a0a;
+                font-size: 1rem;
+            }
+
+            &:last-child {
+                visibility: hidden;
+            }
+        }
+
+        @media (max-width: 959px) {
+            & > div {
+                width: 100%
+            }
+        }
+    }
+
+}

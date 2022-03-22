@@ -1,0 +1,161 @@
+@media only screen and (max-width: 576px) {
+	.auth-container{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.auth-header{
+		text-align: center;
+	}
+	.sign-category{
+		text-align: center;
+		font-size: 36px;
+	}
+    .left-img{
+    	display: none;
+    }
+    .right-img{
+    	display: none;
+    }
+    .user-icon{
+    	width: 82px;
+		height: 90px;
+		display: block;
+		margin: auto;
+    }
+    .sign-up{
+    	text-align: center;
+    	font-size: 30px;
+    }
+    .time{
+    	text-align: center;
+    }
+    .text-right{
+    	text-align: center !important;
+    	float: none;
+    	margin-top: 19px;
+    }
+    .col-md-6.return, .col-md-6.continue{
+    	text-align: center !important;
+    }
+    .rect{
+    	display: none;
+    }
+    .success-content{
+    	margin-top: 50px;
+    }
+    .congrats{
+    	font-size: 40px;
+    	text-align: center;
+    }
+    .sub-text{
+    	font-size: 34px;
+    	text-align: center;
+    }
+    .button-holder{
+    	text-align: center;
+    }
+    .screen{
+    	transform: scale(0.8);
+    	width: auto;
+    	height: auto;
+    	display: block;
+    	margin: auto;
+    }
+    .is-pale{
+    	text-align: center;
+    }
+    .footer-content{
+        padding-top: 55px;
+        padding-bottom: 90px;
+    }
+    .footer-nav{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .logo-holder{
+        text-align: center;
+    }
+    .address{
+        text-align: center;
+    }
+    .has-contacts{
+        text-align: center;
+    }
+    .contact-group{
+        padding-bottom: 10px;
+    }
+    .contact-group-two{
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+	.auth-header{
+	  margin-top: 120px;
+	}
+	.auth-container{
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+	.user-icon{
+    	width: 82px;
+		height: 90px;
+		display: block;
+		margin: auto;
+    }
+    .sign-up{
+    	text-align: center;
+    }
+    .col-md-5.reg-cols{
+		/*border-radius: 10px;*/
+		padding-left: 10px;
+		/*padding-top: 48px;
+		padding-bottom: 48px;*/
+		padding-right: 10px;
+	}
+	.time{
+    	text-align: center;
+    }
+    .text-right{
+    	text-align: center !important;
+    	float: none;
+    	margin-top: 19px;
+    }
+    .screen{
+    	transform: scale(0.8);
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+	.auth-header{
+	  margin-top: 120px;
+	}
+	.auth-container{
+		padding-left: 160px;
+		padding-right: 150px;
+	}
+	.user-icon{
+    	width: 82px;
+		height: 90px;
+		display: block;
+		margin: auto;
+    }
+    .sign-up{
+    	text-align: center;
+    }
+    .col-md-5.reg-cols{
+		/*border-radius: 10px;*/
+		padding-left: 10px;
+		/*padding-top: 48px;
+		padding-bottom: 48px;*/
+		padding-right: 10px;
+	}
+	.time{
+    	text-align: center;
+    }
+    .text-right{
+    	text-align: center !important;
+    	float: none;
+    	margin-top: 19px;
+    }
+}

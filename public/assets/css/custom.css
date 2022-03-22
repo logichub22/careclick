@@ -1,0 +1,153 @@
+.main-sidebar .sidebar-brand a .header-logo {
+  height: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-sidebar .sidebar-brand a .header-logo {
+  height: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-mini .main-sidebar .sidebar-brand a .header-logo {
+  height: 30px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  width: 100%;
+}
+
+.auth-logo {
+  height: 50px;
+}
+
+.card h4 {
+  padding: 0 !important;
+}
+
+.theme-black .header-logo {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+[class*=col-]:first-child {
+  padding-left: 0 !important;
+}
+
+[class*=col-]:last-child {
+  padding-right: 0 !important;
+}
+
+@media (max-width: 959px) {
+  [class*=col-]:nth-child(odd) {
+    padding-left: 0 !important;
+  }
+
+  [class*=col-]:nth-child(even) {
+    padding-right: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  [class*=col-] {
+    padding: 0 !important;
+  }
+}
+
+.card.card-statistic-1 .card-icon,
+.card.card-statistic-2 .card-icon {
+  margin-right: 15px;
+  margin-top: -18px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px -5px grey;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.main-content {
+  min-height: calc((100vh) - (57px)) !important;
+}
+
+.form-group label {
+  text-align: left;
+  width: 100%;
+}
+
+.accordion .accordion-header:hover {
+  background-color: #e3e3e3;
+}
+
+.accordion .accordion-header {
+  background-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.theme-white .accordion .accordion-header[aria-expanded=true] {
+  background-color: transparent;
+  color: #0D0A0A;
+}
+
+.theme-white .accordion .accordion-header[aria-expanded=true] h4 {
+  font-weight: bold;
+}
+
+.accordion .accordion-header h4 {
+  font-weight: lighter;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-desc {
+  width: 100%;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 5px;
+  z-index: 20;
+  opacity: 0;
+  padding: 10px;
+  transform: scaleY(0);
+  transform-origin: top left;
+  transition: all 0.3s ease-in-out;
+  font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  .input-desc {
+    height: 0;
+    position: relative;
+  }
+}
+
+.form-control:focus ~ .input-desc {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 767px) {
+  .form-control:focus ~ .input-desc {
+    height: unset;
+  }
+}
+
+table .btn {
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 24px;
+  padding: 0.1rem 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.dashboard-balance {
+  font-size: 75%;
+}

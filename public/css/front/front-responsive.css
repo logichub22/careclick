@@ -1,0 +1,277 @@
+@media only screen and (max-width: 576px) {
+	a.navbar-brand{
+        padding-left: 7px;
+    }
+    .fas.fa-arrow-right{
+        display: none;
+    }
+
+    .action-button{
+        height: 45px;
+        border-radius: 4px;
+        background-color: #3d6add;
+        box-shadow: 0 7px 20px 0 #ced4f3;
+        border: none;
+        outline: none;
+        color: white;
+        width: 328px;
+        position: relative;
+        right: auto;
+        top: auto;
+        cursor: pointer;
+    }
+    .sign-holder{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .team-oval-right, .team-oval{
+        display: none;
+    }
+    .welcome-message{
+        text-align: center;
+        font-size: 36px;
+    }
+    .topic{
+        text-align: center;
+        padding-top: 25px;
+    }
+    .intro-content{
+        padding-top: 10px;
+    }
+    .about{
+        text-align: center;
+        font-size: 22px;
+    }
+    /*.landing-banner{
+        display: none;
+    }*/
+    /*.banner-box{
+        display: none;
+    }*/
+    .has-hand{
+        text-align: center;
+    }
+    .hand-image{
+        margin-top: 0;
+    }
+    .inclusive-title{
+        text-align: center;
+    }
+    .inclusive-text{
+        text-align: justify;
+    }
+    .col-title{
+        text-align: center;
+    }
+    .has-g-icon{
+        text-align: center;
+    }
+    .sahara{
+        margin-top: 25px;
+    }
+    .has-more{
+        padding-top: 25px;
+    }
+    .has-sahara{
+        text-align: center;
+        font-size: 30px;
+    }
+    .sahara-text{
+        text-align: justify;
+    }
+    .has-62{
+        padding-bottom: 24px;
+    }
+    .has-arrow{
+        text-align: center;
+    }
+    .feature-row{
+        margin-top: 35px;
+    }
+    .feature-col{
+        text-align: center;
+    }
+    .feature-separator{
+        display: none;
+    }
+    .feature-row-two{
+      margin-top: 33px;
+    }
+    .dot-brown{
+        display: none;
+    }
+    .col-md-6.network{
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
+    .col-md-6.solution-pack{
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
+    .oval-blue{
+        display: none;
+    }
+    .oval-dark{
+        display: none;
+    }
+    .floating-form .land-input{
+      width: 100%;
+      padding-right: 20px;
+    }
+    .land-submit{
+        margin-top: 10px;
+    }
+    .footer-content{
+        padding-top: 55px;
+        padding-bottom: 90px;
+    }
+    .footer-nav{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .logo-holder{
+        text-align: center;
+    }
+    .address{
+        text-align: center;
+    }
+    .has-contacts{
+        text-align: center;
+    }
+    .contact-group{
+        padding-bottom: 10px;
+    }
+    .contact-group-two{
+        padding: 0;
+    }
+    .banner-text{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .action-button{
+        height: 45px;
+        border-radius: 4px;
+        background-color: #3d6add;
+        box-shadow: 0 7px 20px 0 #ced4f3;
+        border: none;
+        outline: none;
+        color: white;
+        width: 290px;
+        position: relative;
+        right: auto;
+        top: auto;
+        cursor: pointer;
+    }
+    .sign-holder{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+    a.navbar-brand{
+        padding-left: 7px;
+    }
+	.action-button{
+        height: 45px;
+        border-radius: 4px;
+        background-color: #3d6add;
+        box-shadow: 0 7px 20px 0 #ced4f3;
+        border: none;
+        outline: none;
+        color: white;
+        width: 327px;
+        position: relative;
+        right: auto;
+        top: auto;
+        cursor: pointer;
+    }
+    .sign-holder{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .intro-content{
+        padding-top: 50px;
+    }
+    .hand-image{
+        margin-top: -70px;
+    }
+    .dot-brown{
+        object-fit: contain;
+        position: relative;
+        display: block;
+        margin-left: 275px;
+        margin-top: -92px;
+        margin-bottom: 0;
+        width: 259px;
+        height: 124px;
+    }
+    .land-submit{
+        margin-top: 10px;
+    }
+    .col-md-6.network{
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+    }
+    .col-md-6.solution-pack{
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+    }
+    .col-title{
+        text-align: center;
+    }
+    .has-g-icon{
+        text-align: center;
+    }
+    .row.sahara{
+        margin-top: 25px;
+    }
+    .has-more{
+        padding-top: 25px;
+    }
+    .sahara-text{
+        text-align: justify;
+    }
+    .has-62{
+        padding-bottom: 24px;
+    }
+    .feature-subtitle{
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .feature-row{
+        margin-top: 35px;
+    }
+    .feature-row-two{
+      margin-top: 33px;
+    }
+    .feature-content{
+        text-align: justify;
+    }
+    .banner-text{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+	.dot-brown{
+        object-fit: contain;
+        position: relative;
+        display: block;
+        margin-left: 540px;
+        margin-top: -92px;
+        margin-bottom: 0;
+        width: 259px;
+        height: 124px;
+    }
+    .banner-text{
+        display: none;
+    }
+}

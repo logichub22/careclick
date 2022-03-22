@@ -1,0 +1,260 @@
+.team--section {
+    padding: 100px 0;
+    min-height: 100vh;
+    background-image: url(/img/team_bg.png);
+
+    .mt-title {
+        color: #fafafa;
+    }
+
+    .mt-team-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & > div {
+            width: calc(25% - 20px);
+            padding: 30px;
+            position: relative;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 60%, rgba(0, 0, 0, 0.85));
+            box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+            //backdrop-filter: blur(40px);
+            border-radius: 0px 60px 60px 60px;
+            font-family: "M PLUS Rounded 1c", sans-serif;
+            overflow: hidden;
+
+            .mt-team-back {
+                background: rgba(0, 0, 0, 0.8);
+                box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.55);
+                ////backdrop-filter: blur(40px);
+                position: absolute;
+                z-index: 5;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform: translateY(100%);
+                transform-origin: bottom;
+                transition: all .3s ease-in-out;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: unset;
+
+                .img-wrap {
+                    position: relative;
+                    display: inline-block;
+                    width: 70px;
+                    height: 70px;
+
+                    &:before {
+                        content: "";
+                        background: #0288D1;
+                        position: absolute;
+                        top: 50%;
+                        width: 70px;
+                        height: 70px;
+                        left: 50%;
+                        transform: translate(-50%, -35%);
+                        border-radius: 50%;
+                        transform-origin: center center;
+                        transition: all .3s ease-in-out;
+                    }
+
+                    &:hover {
+                        &:before {
+                            transform: scale(25);
+                            pointer-events: none;
+                        }
+                    }
+
+                    img {
+                        height: 40px;
+                        position: relative;
+                        z-index: 4;
+                    }
+                }
+            }
+
+            &:hover {
+                .mt-team-back {
+                    transform: translateY(0);
+
+                    h4, p, .mt-more--info {
+                        position: relative;
+                        z-index: 6;
+                    }
+
+                    .mt-more--info, .mt-more--info:active, .mt-more--info:link, .mt-more--info:visited {
+                        color: #fff !important;
+                        display: inline-block;
+                        padding: 10px 30px;
+                        background: rgba(255, 255, 255, 0.2);
+                        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+                        backdrop-filter: blur(40px);
+                        border-radius: 40px;
+                        transition: all .3s ease-in-out;
+
+                        &:hover {
+                            background: rgba(255, 255, 255, 0.1);
+                        }
+                    }
+                }
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 60%;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.85);
+                box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+                //backdrop-filter: blur(40px);
+            }
+
+            img {
+                width: 100%;
+            }
+
+            h4, p {
+                margin: 0;
+                color: #fafafa;
+            }
+
+            h4 {
+                margin-top: 10px;
+                font-weight: 800;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 1.04rem;;
+            }
+            margin-bottom: 40px;
+
+            &:last-child, &:nth-child(7){
+                visibility: hidden;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            & > div {
+                width: calc((100% / 3) - 30px);
+                &:last-child,
+                &:nth-child(7){
+                    display: none;
+                }
+            }
+        }
+
+        @media (max-width: 959px) {
+            & > div {
+                width: calc(50% - 30px);
+            }
+        }
+
+        @media (max-width: 767px) {
+            & > div {
+                width: 100%;
+            }
+        }
+
+        &.advisory {
+            & > div {
+                &:before {
+                    background: rgba(44, 6, 92, 0.6);
+                    //backdrop-filter: blur(40px);
+                }
+
+                .mt-team-back {
+                    background: rgba(44, 6, 92, 0.85);
+                }
+                &:nth-child(7) {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+.team--info {
+    .uk-modal-dialog {
+        width: 900px;
+
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 25px;
+        overflow: hidden;
+
+        .img--space {
+            position: relative;
+            width: 250px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 60%, rgba(0, 0, 0, 0.85));
+            padding: 40px 20px;
+            height: 380px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h4 {
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: #fafafa;
+            }
+
+            .img--pos {
+                position: relative;
+                text-align: center;
+
+                img {
+                    width: 180px;
+                }
+            }
+
+            .team--pos {
+                position: relative;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 67%;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.85);
+                box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+                //backdrop-filter: blur(40px);
+            }
+        }
+
+        .info--space {
+            height: 380px;
+            width: calc(100% - 250px);
+            overflow: auto;
+        }
+
+        &.advice {
+            .img--space {
+                &:before {
+                    background: rgba(44, 6, 92, 0.6);
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 959px) {
+    .team--info {
+        .uk-modal-dialog {
+            width: 100%;
+
+            .img--space, .info--space {
+                width: 100%;
+            }
+        }
+    }
+}

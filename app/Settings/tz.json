@@ -1,0 +1,46 @@
+{
+    "funds": {
+        "contributions": {
+            "custom_name": "",
+            "max": "",
+            "min": "",
+            "date": ""
+        },
+        "shares": {
+            "custom_name": "",
+            "max": "",
+            "min": "",
+            "unit_per_share": "",
+            "rules": {
+                "description": ""
+            }
+        },
+        "fines": {
+            "custom_name": "",
+            "types": {
+                "description": ""
+            }
+        },
+        "loans": {
+            "description": "",
+            "types": {
+                "description": ""
+            }
+        },
+        "dividends": {
+            "description": ""
+        },
+        "fees": {
+            "custom_name": "",
+            "types": {
+                "description": ""
+            }
+        }
+    },
+    "meetings": {
+        "frequency": {
+            "time": "",
+            "period": ""
+        }
+    }
+}

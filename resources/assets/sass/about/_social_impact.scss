@@ -1,0 +1,57 @@
+.social--impact--section {
+    padding: 100px 0;
+    h3 {
+        color: #0a0a0a;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    p {
+        color: #0a0a0a;
+        margin: 0;
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+
+    .mt-impact--list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+
+        & > div {
+            width: 23%;
+            transition: all .3s ease-in-out;
+            background: rgba(174, 255, 238, 0.25);
+            backdrop-filter: blur(30px);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            p {
+                margin: 0;
+                color: #0a0a0a;
+                font-size: 1.1rem;
+            }
+
+            &:nth-child(2) {
+                background: rgba(236, 207, 255, 0.85);
+            }
+
+            &:nth-child(3) {
+                background: rgba(192, 246, 219, 0.85);
+            }
+
+            &:nth-child(4) {
+                background: rgba(118, 196, 246, 0.85);
+            }
+        }
+
+        @media (max-width: 959px) {
+            & > div {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
