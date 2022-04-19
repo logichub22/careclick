@@ -48,6 +48,10 @@
             <li><a class="nav-link" href="{{ route('user.bills-payment') }}"><i class="fas fa-money-bill"></i><span>Bills Payment</span></a></li>
 
             </li>
+
+            <li class="menu-header">Services</li>
+            <li><a class="nav-link" href="{{ route('user.careclick') }}"><i class="fas  fa-money-check"></i><span>CareClick</span></a></li>
+
             <li class="menu-header">Analytics, Reporting &amp Statements</li>
             <li class="dropdown">
                 <a href="#" class="menu-toggle nav-link has-dropdown"><i class="fas fa-chart-pie"></i><span>Graphical Analysis</span></a>

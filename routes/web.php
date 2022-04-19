@@ -324,6 +324,8 @@ Route::middleware(['auth','set-locale', 'role:normal-user|group-member|group-adm
 			Route::get('loan-scheduler/{id}', 'UserLoanController@scheduler')->name('user.scheduler');
 			Route::get('loan-repay-list/{id}', 'UserLoanController@repaymentList')->name('user.repaylist');
 			Route::post('repay-loan', 'UserLoanController@repayLoan')->name('user.repay-loan');
+
+			Route::get('careclick', 'CareClickController@index')->name('user.careclick');
 		});
 	});
 });
